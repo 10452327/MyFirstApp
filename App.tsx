@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import React from 'react' ;
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.viewstyle}>
+      <Text style={styles.headingText}>My Hobbies:</Text>
+      <Text style={styles.subHeading}>1. Chess</Text>
+      <Text style={styles.subHeading}>2. Eating</Text>
+      <Text style={styles.subHeading}>3. Soccer</Text>
+      <Text style={styles.subHeading}>3. Gym</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  viewstyle: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0707e0',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
+
+  headingText: {
+    fontSize: 40,
+    color: 'black',
+    fontWeight: 'bold',
+  },
+  subHeading: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: '#ffc2cd'
+  }
 });
